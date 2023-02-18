@@ -19,15 +19,6 @@
       <a href="https://github.com/ChrisWoody/SpaceShipDodgeAsteroidsAndMeteors" rel="noopener noreferrer"><button type="button" class="btn btn-secondary" style="margin: 2px;">Source Code</button></a>
     </div>
     <br />
-    <div style="margin: auto;max-width: fit-content;">
-      <h3>Credits</h3>
-      <ul>
-        <li>"<a href="https://www.youtube.com/watch?v=HA2t3KM5z9s" rel="noopener noreferrer">Music (and inspriation)</a>" by <a href="https://www.youtube.com/@kalysian" rel="noopener noreferrer">Kalysian</a></li>
-        <li>"<a href="https://deep-fold.itch.io/space-background-generator" rel="noopener noreferrer">Background image</a>" by <a href="https://deep-fold.itch.io/" rel="noopener noreferrer">Deep-Fold</a></li>
-        <li>"<a href="https://ansimuz.itch.io/spaceship-shooter-environment" rel="noopener noreferrer">Spaceship</a>" by <a href="https://ansimuz.itch.io/" rel="noopener noreferrer">Ansimuz</a></li>
-        <li>"<a href="https://axassets.itch.io/spaceship-simple-assets" rel="noopener noreferrer">Asteroids/Meteors</a>" by <a href="https://axassets.itch.io/" rel="noopener noreferrer">AXAssets</a></li>
-      </ul>
-    </div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1280 height=720></canvas>
       <div id="unity-loading-bar">
@@ -42,6 +33,15 @@
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">SpaceShipDodgeAsteroids</div>
       </div>
+    </div>
+    <div style="margin: auto;max-width: fit-content;">
+      <h3>Credits</h3>
+      <ul>
+        <li>"<a href="https://www.youtube.com/watch?v=HA2t3KM5z9s" rel="noopener noreferrer">Music (and inspriation)</a>" by <a href="https://www.youtube.com/@kalysian" rel="noopener noreferrer">Kalysian</a></li>
+        <li>"<a href="https://deep-fold.itch.io/space-background-generator" rel="noopener noreferrer">Background image</a>" by <a href="https://deep-fold.itch.io/" rel="noopener noreferrer">Deep-Fold</a></li>
+        <li>"<a href="https://ansimuz.itch.io/spaceship-shooter-environment" rel="noopener noreferrer">Spaceship</a>" by <a href="https://ansimuz.itch.io/" rel="noopener noreferrer">Ansimuz</a></li>
+        <li>"<a href="https://axassets.itch.io/spaceship-simple-assets" rel="noopener noreferrer">Asteroids/Meteors</a>" by <a href="https://axassets.itch.io/" rel="noopener noreferrer">AXAssets</a></li>
+      </ul>
     </div>
     <script>
       var container = document.querySelector("#unity-container");
@@ -78,9 +78,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/build.data.br",
-        frameworkUrl: buildUrl + "/build.framework.js.br",
-        codeUrl: buildUrl + "/build.wasm.br",
+        dataUrl: buildUrl + "/build.data",
+        frameworkUrl: buildUrl + "/build.framework.js",
+        codeUrl: buildUrl + "/build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ChrisWood",
         productName: "SpaceShipDodgeAsteroids",
